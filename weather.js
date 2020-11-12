@@ -15,7 +15,7 @@ $(document).ready(function () {
 
         $(".city").text(cityInput);
 
-        var openWeatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=";
+        var openWeatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
         var apiKey = "&appid=ff0fbb04d2a445c1ac5789fb33f3d957";
 
 
@@ -56,7 +56,7 @@ $(document).ready(function () {
 
             var uvLat = weatherData.coord.lat
             var uvLon = weatherData.coord.lon
-            var openWeatherUv = 'http://api.openweathermap.org/data/2.5/uvi?lat=' + uvLat + '&lon=' + uvLon + apiKey
+            var openWeatherUv = 'https://api.openweathermap.org/data/2.5/uvi?lat=' + uvLat + '&lon=' + uvLon + apiKey
             var uvIndex = $('.uv-index').text('UV Index: ')
 
             $.ajax({
